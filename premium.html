@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Content</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Premium Study Resources</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="match.html">Find a Study Buddy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Exclusive Study Materials</h2>
+        <p id="premiumContent">You must be a premium user to access this content.</p>
+        <button onclick="buyPremium()">Go Premium</button>
+    </main>
+    <main>
+        <h3>Premium contents</h3>
+        <p>Acess to Past Questions</p>
+        <p>Flashcards</p>
+        <p>Practice Questions</p>
+    </main>
+
+    <script>
+        function buyPremium() {
+            localStorage.setItem("isPremium", "true");
+            checkPremium();
+        }
+
+        function checkPremium() {
+            if (localStorage.getItem("isPremium") === "true") {
+                document.getElementById("premiumContent").innerHTML = "<p>✔️ Access granted! Here are your premium study materials...</p>";
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", checkPremium);
+    </script>
+</body>
+</html>
