@@ -3,41 +3,356 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #f4f4f4;
+    background-image: url("bg.jpg"); /* Replace with your image file */
+    background-size: cover; /* Makes the image cover the whole screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating */
+    
 }
 
 header {
     background-color: #000000;
-    padding: 20px;
+    padding: 180px;
+    font-size: 40px;
     color: white;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
+    padding: 0px;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin: ;
+    font-size: 22px;
 }
 
-nav ul li a {
+ #bat{
     color: white;
+    padding-top: 20px;
     text-decoration: none;
 }
 
-button {
-    padding: 10px 20px;
+#die{
+    padding: 8px 10px;
     font-size: 16px;
-    margin: 10px;
+    margin-right: 70px;
+    margin-top: 16px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
     cursor: pointer;
-    background-color: #010101;
-    color: white;
+    background-color: white;
+    color: black;
     border: none;
     border-radius: 5px;
 }
-
-button:hover {
-    background-color: #0056b3;
+#pie{
+    padding: 8px 10px;
+    font-size: 16px;
+    margin-right: 0px;
+    margin-top: 16px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 10px;
 }
+
+#pie:hover{
+    background-color: white;
+    color: #000000;
+    font-size: 17px;
+}
+#die:hover{
+    background-color: rgb(200, 198, 198);
+    color: #000000;
+}
+#StudBud{
+    height: 100px;
+    width: 100px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 50px;
+    text-align: center;
+    color:#ffffff;
+    background-color: black;
+    position:fixed;
+    left:0px
+    bottom:0px
+
+}
+#roy{
+    background-color: #000000;
+    justify-content: center;
+    color: white;
+}
+#pick{
+    border: 2px solid;
+    width: 170px;
+    height:20px;
+    border-radius: 50px;
+    margin: auto;
+    margin-bottom: 0px;
+}
+#body {
+        font-family: sans-serif; /* Choose a suitable font */
+        background-color: black; /* Light background color */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 300px;
+        margin: 0;
+        color: #ffffff;
+}
+.container{
+    display: flex;
+    gap: 20px;
+}
+.step{
+    background-color: rgb(19, 18, 18);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(12, 12, 12, 0.1); /* Subtle shadow */
+    width: 300px;; /* Adjust as needed */
+    height: 150px;
+    cursor: pointer;
+}
+.step-number {
+    background-color:black; /* Light gray number background */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Circle shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    border-color: #ffffff;
+  }
+  .step-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    cursor: pointer;
+    padding-top: 30px;
+  }
+  .step-title{
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+  .step-description{
+    padding-bottom: 20px;
+  }
+  .step:hover{
+    background-color: #585757;
+  }
+#rex{
+    font-family: sans-serif; /* Choose a suitable font */
+        background-color: black; /* Light background color */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 200px;
+        margin: 0;
+        color: #ffffff;
+}
+.step {
+    /* ... other styles ... */
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Move down slightly */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+  }
+  
+  .step.animate {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move to original position */
+  }
+  
+  /* Optional: Add a delay for each step */
+  .step:nth-child(1) {
+      transition-delay: 0.1s;
+  }
+  
+  .step:nth-child(2) {
+      transition-delay: 0.3s;
+  }
+  
+  .step:nth-child(3) {
+      transition-delay: 0.5s;
+  }
+  #pink{
+    border: 2px solid;
+    width: 170px;
+    height:20px;
+    border-radius: 50px;
+    margin: auto;
+    margin-bottom: 0px;
+    border-color: #ffffff;
+  }
+  #mik{
+    background-color: #000000;
+    height: 50vh; /* Make the body scrollable */
+    margin: 0;
+    padding: 10px;
+}
+
+.animated-paragraph { /* Class for the paragraphs you want to animate */
+    background-color: #000000;
+    color: #ffffff;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.9s ease;
+    font-size: 80px;
+}
+
+.animated-paragraph.animate{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Other styles for your page */
+p {
+    /* Example paragraph styles */
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+.pricing-column {
+    background-color: rgb(33, 33, 33)
+    color: white;
+    box-shadow: 0 4px 8px rgba(19, 18, 18, 0.1); /* Subtle shadow */
+    text-align: center; /* Center content */
+    width: 400px; /* Adjust as needed */
+    margin: auto;
+    
+
+  }
+#hash{
+    background-color: #000000;
+    color: #fff;
+    align-items: center;
+}
+.signup-button {
+    background-color: white; /* Blue button */
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: auto;
+  }
+  
+  .pro-button { /* Styles for the pro button */
+    background-color: rgb(31, 29, 29); /* Green button */
+    color: #fff;
+    border-radius: 50px;
+    
+  }
+  footer {
+    background-color: #111; /* Dark background */
+    color: #eee; /* Light text color */
+    padding: 20px;
+    font-family: sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between; /* Distribute sections evenly */
+    max-width: 960px; /* Limit width for larger screens */
+    margin: 0 auto; /* Center the content */
+  }
+  
+  .product-section, .resources-section {
+    margin-top: 800px;
+    width: 45%; /* Adjust width as needed */
+  }
+  
+  h3 {
+    color: #fff; /* White headings */
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  a {
+    color: #eee;
+    text-decoration: none;
+  }
+  
+  .status-indicator {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-left: 5px;
+    border-radius: 50%;
+    background-color: #0f0; /* Green for operational */
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #333; /* Subtle line */
+  }
+  #nice{
+    background-color: rgb(31, 29, 29); /* Green button */
+    color: #fff;
+    border-radius: 50px;
+    margin-bottom: 50px;
+  }
+  #fish{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000000;
+  }
+  #rata{
+    font-size: 100px;
+    font-weight: 500;
+    color: #222;
+    letter-spacing: 5px;
+    cursor: pointer;
+  }
+  #rata span{
+    transition: 0.5s;
+  }
+  #rata:hover span
+  {
+    color:#fff;
+    text-shadow: 0 0 10px #fff;
+                :0 0 20px #fff;
+                :0 0 40px #fff;
+                :0 0 80px #fff;
+                :0 0 120px #fff;
+                :0 0 160px #fff;
+                
+  }
+  #rip{
+    background-color: rgb(31, 29, 29); /* Green button */
+    color: #fff;
+    border-radius: 50px;
+  }
+  #bie{
+    text-shadow: 0 0 10px #fff;
+                :0 0 20px #fff;
+                :0 0 40px #fff;
+                 :0 0 80px #fff;
+                 :0 0 120px #fff;
+                 :0 0 160px #fff;
+  }
+  .animated-paragraph{
+    text-shadow: 0 0 10px #fff;
+    :0 0 20px #fff;
+    :0 0 40px #fff;
+    :0 0 80px #fff;
+    :0 0 120px #fff;
+    :0 0 160px #fff;
+  }
