@@ -6,9 +6,9 @@
     <title>Premium Content</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="fish">
     <header>
-        <h1>Premium Study Resources</h1>
+        <h1 id="rata"><span>Pro</span></h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,7 +21,7 @@
     <main>
         <h2>Exclusive Study Materials</h2>
         <p id="premiumContent">You must be a premium user to access this content.</p>
-        <button onclick="buyPremium()">Go Premium</button>
+        <button id="rip" onclick="buyPremium()">Go Pro</button>
     </main>
     <main>
         <h3>Premium contents</h3>
@@ -30,19 +30,6 @@
         <p>Practice Questions</p>
     </main>
 
-    <script>
-        function buyPremium() {
-            localStorage.setItem("isPremium", "true");
-            checkPremium();
-        }
-
-        function checkPremium() {
-            if (localStorage.getItem("isPremium") === "true") {
-                document.getElementById("premiumContent").innerHTML = "<p>✔️ Access granted! Here are your premium study materials...</p>";
-            }
-        }
-
-        document.addEventListener("DOMContentLoaded", checkPremium);
-    </script>
+    
 </body>
 </html>
