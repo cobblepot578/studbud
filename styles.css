@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -356,3 +357,9 @@ p {
     :0 0 120px #fff;
     :0 0 160px #fff;
   }
+#chick{
+  color: #0f0;
+}
+#sharp{
+  color:#fff
+}
